@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Higher Education Information Hub V2</title>
+    <!-- Load Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Custom font import (Inter) */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f3f7; /* Slightly darker light grey background for contrast */
+        }
+
+        /* Gradient Text Styling */
+        .gradient-text {
+            background: linear-gradient(90deg, #1d4ed8, #60a5fa); /* Deeper blue to lighter sky blue */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+        }
+
+        /* New Hover Effect for Denser Cards */
+        .nav-card {
+            transition: all 0.2s ease-in-out;
+        }
+        .nav-card:hover {
+            background-color: #f7f9fc; /* Light hover background */
+            border-color: #3b82f6; /* Blue border highlight on hover */
+            box-shadow: 0 4px 10px rgba(59, 130, 246, 0.1); /* Subtle blue shadow */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+
+        <!-- Header and Main Title Section (Lighter Design) -->
+        <header class="text-center py-12 mb-10">
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight mb-3 leading-snug">
+                The <span class="gradient-text">Higher Education</span>
+                <br>Resource Center
+            </h1>
+            <p class="text-lg sm:text-xl text-gray-500 max-w-4xl mx-auto">
+                Navigate the path to higher learning with comprehensive guides, deadlines, and career data.
+            </p>
+        </header>
+
+      <!-- Navigation Hub (Denser List of Links: 3x3 Grid) -->
+        <section class="p-8 sm:p-10 bg-white rounded-xl shadow-lg">
+            <h2 class="text-3xl font-extrabold text-gray-800 mb-6 border-b border-gray-100 pb-3">
+                Main Resource Links
+            </h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+
+                <!-- Link Card 1: Admission Requirements -->
+                <a href="#admission-requirements" class="nav-card p-4 rounded-lg border border-gray-200 focus:outline-none focus:ring-4 focus:ring-blue-200">
+                    <div class="flex items-center space-x-3">
+                        <i data-lucide="file-text" class="w-6 h-6 text-blue-600"></i>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-800">Admission Requirements</h3>
+                            <p class="text-xs text-gray-500">Tests, essays, and application deadlines.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Link Card 2: Financial Aid & Scholarships -->
+                <a href="#financial-aid" class="nav-card p-4 rounded-lg border border-gray-200 focus:outline-none focus:ring-4 focus:ring-blue-200">
+                    <div class="flex items-center space-x-3">
+                        <i data-lucide="dollar-sign" class="w-6 h-6 text-blue-600"></i>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-800">Financial Aid & Scholarships</h3>
+                            <p class="text-xs text-gray-500">Grants, loans, and merit-based opportunities.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Link Card 3: Choosing a Major -->
+                <a href="#choosing-major" class="nav-card p-4 rounded-lg border border-gray-200 focus:outline-none focus:ring-4 focus:ring-blue-200">
+                    <div class="flex items-center space-x-3">
+                        <i data-lucide="pencil-ruler" class="w-6 h-6 text-blue-600"></i>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-800">Choosing a Major</h3>
+                            <p class="text-xs text-gray-500">Field comparisons and curriculum paths.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Link Card 4: University Rankings -->
+                <a href="#university-rankings" class="nav-card p-4 rounded-lg border border-gray-200 focus:outline-none focus:ring-4 focus:ring-blue-200">
+                    <div class="flex items-center space-x-3">
+                        <i data-lucide="trophy" class="w-6 h-6 text-blue-600"></i>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-800">University Rankings</h3>
+                            <p class="text-xs text-gray-500">Reputation, research output, and quality data.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Link Card 5: Career Outlook by Degree -->
+                <a href="#career-outlook" class="nav-card p-4 rounded-lg border border-gray-200 focus:outline-none focus:ring-4 focus:ring-blue-200">
+                    <div class="flex items-center space-x-3">
+                        <i data-lucide="bar-chart-3" class="w-6 h-6 text-blue-600"></i>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-800">Career Outlook by Degree</h3>
+                            <p class="text-xs text-gray-500">Salary projections and job growth metrics.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Link Card 6: Student Life Resources -->
+                <a href="#student-life" class="nav-card p-4 rounded-lg border border-gray-200 focus:outline-none focus:ring-4 focus:ring-blue-200">
+                    <div class="flex items-center space-x-3">
+                        <i data-lucide="party-popper" class="w-6 h-6 text-blue-600"></i>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-800">Student Life Resources</h3>
+                            <p class="text-xs text-gray-500">Housing, wellness, and campus activities.</p>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- NEW Link Card 7: Post-Graduate Studies -->
+                <a href="#post-grad-studies" class="nav-card p-4 rounded-lg border border-gray-200 focus:outline-none focus:ring-4 focus:ring-blue-200">
+                    <div class="flex items-center space-x-3">
+                        <i data-lucide="book-open" class="w-6 h-6 text-blue-600"></i>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-800">Post-Graduate Studies</h3>
+                            <p class="text-xs text-gray-500">Masters, PhD programs, and advanced research.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- NEW Link Card 8: International Student Guide -->
+                <a href="#international-guide" class="nav-card p-4 rounded-lg border border-gray-200 focus:outline-none focus:ring-4 focus:ring-blue-200">
+                    <div class="flex items-center space-x-3">
+                        <i data-lucide="globe" class="w-6 h-6 text-blue-600"></i>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-800">International Student Guide</h3>
+                            <p class="text-xs text-gray-500">Visa, language, and cultural transition support.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- NEW Link Card 9: Campus Virtual Tours -->
+                <a href="#virtual-tours" class="nav-card p-4 rounded-lg border border-gray-200 focus:outline-none focus:ring-4 focus:ring-blue-200">
+                    <div class="flex items-center space-x-3">
+                        <i data-lucide="camera" class="w-6 h-6 text-blue-600"></i>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-800">Campus Virtual Tours</h3>
+                            <p class="text-xs text-gray-500">Explore campuses from your home.</p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer class="mt-10 text-center text-gray-400 text-sm py-4">
+            <p>&copy; Higher Education Resource Center. Dedicated to providing clarity.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Initialize Lucide icons after the page content is loaded
+        lucide.createIcons();
+    </script>
+</body>
+</html>
